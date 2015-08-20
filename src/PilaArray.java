@@ -1,10 +1,14 @@
 
-public class PilaArray <E>{
+public class PilaArray <E> implements Pila<E>{
 	
 	private int tamaño;
 	private E[] pila;
 	private int tope;
 	
+	/**
+	 * cambio: se inicializo el tope a 0
+	 */
+	@SuppressWarnings("unchecked")
 	public PilaArray(int s) {
 		tamaño = s;
 	    pila = (E[]) new Object[tamaño];
@@ -15,8 +19,8 @@ public class PilaArray <E>{
 	   }
 	
 	public E pop() {
-	      return pila[tope--];
-	   }
+		return pila[tope--];
+		}
 	
 	public E peek() {
 	      return pila[tope];

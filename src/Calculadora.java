@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.util.Scanner;
 
 /**
  * 
@@ -20,6 +21,12 @@ public class Calculadora {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		int tipo;
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Que tipo de lista prefiere implementar?\n1 = Array\n2 = Vector"
+				+ "\n3 = Simple enlazada\n4 = Doble Enlazada\n5 = Circular");
+		tipo = scan.nextInt();
+		System.out.println("Valor ingresado:" + tipo);
 		System.out.println("Programa calculadora tipo postfix");
 		System.out.println("Asegurese de que el archivo esta "+ "en la misma direccion que el programa");
 		/*lectura de archivo*/

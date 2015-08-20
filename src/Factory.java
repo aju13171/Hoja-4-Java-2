@@ -3,7 +3,7 @@ public class FactoryPila {
 
 	public Opcion setype(int entrada){
 		if (entrada == 1){
-			return new ;
+			return new Pila;
 		}
 		else if(entrada == 2){
 			return new ;
