@@ -1,5 +1,5 @@
 
-public class SimpleEncadenada <E>{
+public class SimpleEncadenada <E> implements Listas<E>{
 	private int size;
 	private Nodo<E> cabeza;
 	private Nodo<E> cola;
@@ -135,6 +135,16 @@ public class SimpleEncadenada <E>{
 			}
 		}
 		return contains;
+	}
+	@Override
+	public E getFirst() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public E getLast() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 }

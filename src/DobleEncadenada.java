@@ -6,7 +6,7 @@
  * @author Chris
  *
  */
-public class DobleEncadenada <E>{
+public class DobleEncadenada <E> implements Listas<E>{
 	private int size;
 	private NodoDoble<E> cabeza;
 	private NodoDoble<E> cola;

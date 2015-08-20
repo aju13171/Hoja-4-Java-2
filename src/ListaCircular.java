@@ -1,5 +1,5 @@
 
-public class ListaCircular <E>{
+public class ListaCircular <E> implements Listas<E>{
 	
 	/**
 	 * VARIABLES:
@@ -112,6 +112,24 @@ public class ListaCircular <E>{
 		}
 		/*se devuelve el valor eliminado*/
 		return temp.valor();
+	}
+
+	@Override
+	public E getFirst() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public E getLast() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean contains(E value) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 	
 }
