@@ -21,7 +21,7 @@ public class DobleEncadenada <E>{
 	/*
 	 * constructor
 	 */
-	public DoblementeEncadenada(){
+	public DobleEncadenada(){
 		size = 0;
 		cabeza = null;
 		cola = null;
