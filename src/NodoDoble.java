@@ -1,9 +1,11 @@
 
+
 public class NodoDoble <E>{
 	private E valor;
 	private NodoDoble<E> prevNodo;
 	private NodoDoble<E> nextNodo;
 	
+	//constructor
 	public NodoDoble(E valor, NodoDoble<E> prevNodo, NodoDoble<E> nextNodo){
 		this.valor = valor;
 		this.prevNodo = prevNodo;
@@ -14,16 +16,30 @@ public class NodoDoble <E>{
 	/*
 	 * Metodos del nodo doble
 	 */
-	private E valor(){
+	public E valor(){
 		return valor;
 	}
 	
-	private void setNext(NodoDoble<E> nextNodo){
+	/*
+	 * metodos para nodo siguiente
+	 */
+	public void setNext(NodoDoble<E> nextNodo){
 		this.nextNodo = nextNodo; 
 	}
 	
-	private NodoDoble<E> getNext(){
+	public NodoDoble<E> getNext(){
 		return nextNodo;
 	}
 	
+	/*
+	 * metodos para nodo anterior
+	 */
+	
+	public void setPrev(NodoDoble<E> prevNodo){
+		this.prevNodo = prevNodo;
+	}
+	
+	public NodoDoble<E> getPrev(){
+		return prevNodo;
+	}
 }

@@ -11,15 +11,17 @@ public class Nodo <E>{
 	/*
 	 * Metodos del nodo
 	 */
-	private E valor(){
+	public E valor(){
 		return valor;
 	}
 	
-	private void setNextNodo(Nodo<E> next){
+
+	public void setNextNodo(Nodo<E> next){
 		nextNodo = next;
 	}
 	
-	private Nodo<E> getNext(){
+	
+	public Nodo<E> getNext(){
 		return nextNodo;
 	}
 	

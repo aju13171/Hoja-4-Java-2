@@ -18,7 +18,6 @@ public class Calculadora {
 	/**
 	 * @param args
 	 */
-	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("Programa calculadora tipo postfix");
