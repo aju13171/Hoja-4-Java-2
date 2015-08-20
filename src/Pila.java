@@ -3,6 +3,7 @@ public class Pila <E> {
 	private int tamaño;
 	private E[] pila;
 	private int tope;
+	@SuppressWarnings("unchecked")
 	public Pila(int s) {
 		tamaño = s;
 	    pila = (E[]) new Object[tamaño];
