@@ -148,6 +148,7 @@ public class Calculadora {
 		}
 		linea = temp;
 		System.out.println("Final: " + linea);
+		System.out.println("size: " + size);
 
 		//inicializacion de factory
 		if(tipo>0 && tipo<3){
@@ -198,7 +199,8 @@ public class Calculadora {
 		}
 		if (lista2 == null){
 			//es tipo AV
-			for(int i=(size-1); i>-1; i--){
+			for(int i=(size); i>-1; i--){
+				System.out.println(size);
 				temp = Character.toString(linea.charAt(i));
 				System.out.println("ingreso: " + temp);
 				lista.push(temp);
