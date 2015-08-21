@@ -35,7 +35,7 @@ public class PilaVector <E> implements Pila<E>{
 
 	public boolean isEmpty() {
 		// TODO Auto-generated method stub
-		return (finger == -1);
+		return (finger == 0); // solucionado antes igualado a -1.
 	}
 
 	public boolean isFull() {
