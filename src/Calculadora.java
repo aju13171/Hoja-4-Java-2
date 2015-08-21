@@ -174,6 +174,7 @@ public class Calculadora {
 				System.out.println(size);
 				val1 = Integer.parseInt(lista2.removeFirst());
 				val2 = Integer.parseInt(lista2.removeFirst());
+				//error aqui
 				temp = lista2.removeFirst();
 				System.out.println("valor 1: " + val1);
 				System.out.println("valor 2: " + val2);
