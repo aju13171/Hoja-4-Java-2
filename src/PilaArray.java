@@ -10,6 +10,7 @@ public class PilaArray <E> implements Pila<E>{
 	private E[] pila;
 	private int tope;
 	
+	@SuppressWarnings("unchecked")
 	public PilaArray(int s) {
 		tamaño = s;
 	    pila = (E[]) new Object[tamaño];
