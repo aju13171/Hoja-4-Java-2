@@ -174,9 +174,10 @@ public class Calculadora {
 				System.out.println(size);
 				val1 = Integer.parseInt(lista2.removeLast());
 				val2 = Integer.parseInt(lista2.removeLast());
+				temp = lista2.removeLast();
 				System.out.println("valor 1: " + val1);
 				System.out.println("valor 2: " + val2);
-				if ((lista2.removeLast()) == "+"){
+				if (temp == "+"){
 					val1 = val1 + val2;
 					System.out.println("suma= " + val1);
 					//se vuelve a ingresar el resultado
@@ -184,7 +185,7 @@ public class Calculadora {
 					//solo se restan 2 porque se vuelve a ingresar el resultado
 					size = size - 2;
 				}
-				if ((lista2.removeLast()) == "*"){
+				if (temp == "*"){
 					val1 = val1 * val2;
 					System.out.println("multiplicacion= " + val1);
 					//se vuelve a ingresar el resultado
@@ -200,6 +201,22 @@ public class Calculadora {
 				temp = Character.toString(linea.charAt(i));
 				System.out.println("ingreso: " + temp);
 				lista.push(temp);
+			}
+			System.out.println("fin de ingresos\n\n ");
+			//calculos
+			while (size>1){
+				val1 = Integer.parseInt(lista.pop());
+				val2 = Integer.parseInt(lista.pop());
+				temp = lista.pop();
+				System.out.println("valor 1: " + val1);
+				System.out.println("valor 2: " + val2);
+				if (temp== "+"){
+					val1 = val1 + val2;
+					System.out.println("suma= " + val1);
+				}
+				if (temp =="*"){
+					
+				}
 			}
 		}
 	}
