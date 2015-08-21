@@ -1,16 +1,20 @@
 
 /**
- * @author MS
+ * @author Jorge Manrique, Christopher Aju
  *
- * @param <E>
+ * @param <E> Parametro generico.
  */
 public class PilaArray <E> implements Pila<E>{
 	
+	/**
+	 * tamaño es el tamaño del arreglo
+	 * E[] pila es el arreglo de genericos.
+	 * tope guarda la posicion en la que se esta trabajando
+	 */
 	private int tamaño;
 	private E[] pila;
 	private int tope;
 	
-	@SuppressWarnings("unchecked")
 	public PilaArray(int s) {
 		tamaño = s;
 	    pila = (E[]) new Object[tamaño];

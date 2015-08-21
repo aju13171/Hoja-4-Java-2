@@ -1,4 +1,9 @@
-
+/**
+ * 
+ * @author Christopher Aju, Jorge Manrique
+ *
+ * @param <E> Parametro generico.
+ */
 public class SimpleEncadenada <E> implements Listas<E>{
 	private int size;
 	private Nodo<E> cabeza;
@@ -72,25 +77,25 @@ public class SimpleEncadenada <E> implements Listas<E>{
 		//se cambia la referencia a la cola
 		//si es el primer elemento:
 		if (cola == null && cabeza == null){
-			//System.out.println("ejecucion if 1");
+			System.out.println("ejecucion if 1");
 			cola = temp;
 			cabeza = temp;
 		}
 		//si es el segundo elemento
 		if (size==2){
-			//System.out.println("ejecucion if 2");
+			System.out.println("ejecucion if 2");
 			cabeza.setNextNodo(temp);
 			cola = temp;
 		}
 		//si no es el primer elemento ni el segundo elemento
 		else{
-			//System.out.println("ejecucion else");
+			System.out.println("ejecucion else");
 			cola.setNextNodo(temp);
 			//se asigna la nueva cola
 			cola = temp;			
 		}
 		size++;
-		//System.out.println("si se ven dos mensajes de ejecucion hay error en codigo SimpleEncadenada");
+		System.out.println("si se ven dos mensajes de ejecucion hay error en codigo SimpleEncadenada");
 	}
 	
 	public E removeLast(){

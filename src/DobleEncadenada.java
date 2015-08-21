@@ -3,7 +3,7 @@
  */
 
 /**
- * @author Chris
+ * @author Christopher Aju, Jorge Manrique
  *
  */
 public class DobleEncadenada <E> implements Listas<E>{
@@ -44,7 +44,7 @@ public class DobleEncadenada <E> implements Listas<E>{
 	}
 	
 	public void addFirst(E valor){
-		//System.out.println("falta revisar logica defensiva");
+		System.out.println("falta revisar logica defensiva");
 		//se crea el nuevo nodo cabeza
 		temp = new NodoDoble<E>(valor, null, cabeza);
 		
@@ -90,7 +90,7 @@ public class DobleEncadenada <E> implements Listas<E>{
 	 * falta revisar logica defensiva (ver hoja)
 	 */
 	public void addLast(E valor){
-		//System.out.println("falta revisar logica defensiva");
+		System.out.println("falta revisar logica defensiva");
 		//se crea el nuevo nodo con referencia anterior a la vieja cola
 		temp = new NodoDoble<E>(valor, cola, null);
 		//se cambia la referencia siguiente de la vieja cola

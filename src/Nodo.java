@@ -1,8 +1,18 @@
-
+/**
+ * 
+ * @author Christopher Aju, Jorge Manrique
+ *
+ * @param <E> Parametro generico.
+ */
 public class Nodo <E>{
 	private E valor;
 	private Nodo<E> nextNodo;
 	
+	/**
+	 * 
+	 * @param valor Valor
+	 * @param nextNodo Referencia
+	 */
 	public Nodo(E valor, Nodo<E> nextNodo){
 		this.valor = valor;
 		this.nextNodo = nextNodo;

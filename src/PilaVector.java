@@ -1,5 +1,11 @@
 import java.util.Vector;
 
+/**
+ * 
+ * @author Jorge Manrique, Christopher Aju.
+ *
+ * @param <E> Parametro generico.
+ */
 public class PilaVector <E> implements Pila<E>{
 	// atributos
 	private int large;

@@ -1,5 +1,10 @@
-
-public class ListaCircular <E> implements Listas<E>{
+/**
+ * 
+ * @author Christopher Aju, Jorge Manrique
+ *
+ * @param <E> Parametro generico.
+ */
+public class ListaCircular <E> implements Listas <E>{
 	
 	/**
 	 * VARIABLES:
@@ -19,10 +24,16 @@ public class ListaCircular <E> implements Listas<E>{
 		cola = null;
 	}
 	
+	/**
+	 * Metodo que retorna el tamaño de la lista circular.
+	 */
 	public int size(){
 		return size;
 	}
 	
+	/**
+	 * Metodo para agregar elemento al inicio de la lista circular.
+	 */
 	public void addFirst(E value){
 		/**
 		 * El valor de siguiente se deja nulo para verificar despues 
@@ -48,6 +59,9 @@ public class ListaCircular <E> implements Listas<E>{
 		}
 	}
 	
+	/**
+	 * Metodo para eliminar el primer elemento d ela lisra circular.
+	 */
 	public E removeFirst(){
 		temp = cabeza;
 		/*se asigna la nueva cabeza*/
@@ -61,8 +75,7 @@ public class ListaCircular <E> implements Listas<E>{
 	}
 	
 	/**
-	 * hay que revisar el addLast, no estoy seguro si funciona completamente
-	 * @param value
+	 * @param value Parametro que se desea agregar en la ultima posicion de la lista.
 	 */
 	public void addLast(E value){
 		/*se crea el nuevo nodo*/
@@ -85,6 +98,9 @@ public class ListaCircular <E> implements Listas<E>{
 		}
 	}
 	
+	/**
+	 * Metodo para quitar el ultimo elemento de la lista.
+	 */
 	public E removeLast(){
 		temp = cabeza;
 		
@@ -116,19 +132,19 @@ public class ListaCircular <E> implements Listas<E>{
 
 	@Override
 	public E getFirst() {
-		// TODO Auto-generated method stub
+		// Obtener el valor del primer elemento.
 		return null;
 	}
 
 	@Override
 	public E getLast() {
-		// TODO Auto-generated method stub
+		// Obtener el valor del ultimo elemento.
 		return null;
 	}
 
 	@Override
 	public boolean contains(E value) {
-		// TODO Auto-generated method stub
+		// Determinar si la lisra contiene un elemento especifico.
 		return false;
 	}
 	
