@@ -148,7 +148,7 @@ public class Calculadora {
 		}
 		linea = temp;
 		System.out.println("Final: " + linea);
-		
+
 		//inicializacion de factory
 		if(tipo>0 && tipo<3){
 			//es de tipo AV
@@ -162,8 +162,8 @@ public class Calculadora {
 		//ingreso de los datos y calculos
 		if (lista == null){
 			//es tipo listas
-			//Ingreso de los datos en la lista
-			for(int i=0; i<(size-1); i++){
+			//Ingreso de los datos en la lista en orden inverso
+			for(int i=(size-1); i>-1; i--){
 				temp = Character.toString(linea.charAt(i));
 				System.out.println("ingreso: " + temp);
 				lista2.addFirst(temp);
@@ -172,24 +172,24 @@ public class Calculadora {
 			//calculos
 			while(size>1){
 				System.out.println(size);
-				val1 = Integer.parseInt(lista2.removeLast());
-				val2 = Integer.parseInt(lista2.removeLast());
-				temp = lista2.removeLast();
+				val1 = Integer.parseInt(lista2.removeFirst());
+				val2 = Integer.parseInt(lista2.removeFirst());
+				temp = lista2.removeFirst();
 				System.out.println("valor 1: " + val1);
 				System.out.println("valor 2: " + val2);
-				if (temp == "+"){
+				if (temp.equals("+")){
 					val1 = val1 + val2;
 					System.out.println("suma= " + val1);
 					//se vuelve a ingresar el resultado
-					lista2.addLast(Integer.toString(val1));
+					lista2.addFirst(Integer.toString(val1));
 					//solo se restan 2 porque se vuelve a ingresar el resultado
 					size = size - 2;
 				}
-				if (temp == "*"){
+				if (temp.equals("*")){
 					val1 = val1 * val2;
 					System.out.println("multiplicacion= " + val1);
 					//se vuelve a ingresar el resultado
-					lista2.addLast(Integer.toString(val1));
+					lista2.addFirst(Integer.toString(val1));
 					//solo se restan 2 porque se vuelve a ingresar el resultado
 					size = size - 2;
 				}
@@ -197,7 +197,7 @@ public class Calculadora {
 		}
 		if (lista2 == null){
 			//es tipo AV
-			for(int i=0; i<(size-1); i++){
+			for(int i=(size-1); i>-1; i--){
 				temp = Character.toString(linea.charAt(i));
 				System.out.println("ingreso: " + temp);
 				lista.push(temp);
@@ -213,9 +213,14 @@ public class Calculadora {
 				if (temp== "+"){
 					val1 = val1 + val2;
 					System.out.println("suma= " + val1);
+					//se ingresa el resultado
+					lista.push(Integer.toString(val1));
 				}
 				if (temp =="*"){
-					
+					val1 = val1 * val2;
+					System.out.println("multiplicacion= " + val1);
+					//se ingresa el resultado
+					lista.push(Integer.toString(val1));
 				}
 			}
 		}
