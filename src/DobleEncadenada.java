@@ -3,7 +3,7 @@
  */
 
 /**
- * @author Chris
+ * @author Christopher Aju, Jorge Manrique
  *
  */
 public class DobleEncadenada <E> implements Listas<E>{

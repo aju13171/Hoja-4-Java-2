@@ -1,5 +1,10 @@
 
-
+/**
+ * 
+ * @author Christopher Aju, Jorge Manrique
+ *
+ * @param <E> Parametro generico.
+ */
 public class NodoDoble <E>{
 	private E valor;
 	private NodoDoble<E> prevNodo;

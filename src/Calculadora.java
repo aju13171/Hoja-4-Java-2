@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * Calculadora.java
- * @author Chris
+ * @author Christopher Aju, Jorge Manrique
  * Programa que lee un archivo con las instrucciones de las operaciones en formato 
  * postfix y pide al usuario que tipo de lista implementar
  *
